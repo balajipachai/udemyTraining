@@ -19,6 +19,12 @@ func average(sf ...float64) float64 {
 }
 
 func main() {
-	n := average(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-	fmt.Println("Average: ", n)
+	//Note that we are calling average with variable number of arguments.
+	avg1 := average(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+	avg2 := average(10, 20, 30, 45, 25, 78, 96, 100)
+	//average is also called without an argument still it's executed.
+	avg3 := average()
+	fmt.Println("Average1: ", avg1)
+	fmt.Println("Average2: ", avg2)
+	fmt.Println("Average3: ", avg3)
 }
